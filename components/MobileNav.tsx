@@ -21,45 +21,39 @@ const MobileNav = async () => {
       <SheetClose asChild>
         <SheetContent
           side='left'
-          className='border-none bg-primary   shadow-none lg:hidden '
+          className='border-none    shadow-none lg:hidden '
           aria-describedby='mobile-nav'
         >
           <SheetTitle className='text-xl font-semibold uppercase italic '>
             <Link href='/' aria-label='Stron Główna'>
-              Digital Agency
+              Nieruchomości
             </Link>
           </SheetTitle>
           <div className=' flex flex-col gap-4 text-xl mt-4 '>
             <Logout session={session} />
             <Link
-              aria-label='contact'
+              aria-label='Kontakt'
               className='w-fit border-b-2 border-b-primary hover:border-b-2 hover:border-secondary focus:border-b-2 focus:border-secondary'
               href='/contact'
             >
-              Contact
+             Kontakt
             </Link>
             <Link
-              aria-label='about us'
+              aria-label='O nas'
                className='w-fit border-b-2 border-b-primary hover:border-b-2 hover:border-secondary focus:border-b-2 focus:border-secondary'
               href='/about'
             >
-              About us
+              O nas
             </Link>
             <Link
-              aria-label='Services'
+              aria-label='Oferta'
                className='w-fit border-b-2 border-b-primary hover:border-b-2 hover:border-secondary focus:border-b-2 focus:border-secondary'
-              href='/services'
+              href='/offer'
             >
-              Services
+              Oferta
             </Link>
 
-            <Link
-              aria-label='Reviews'
-              href='/reviews'
-               className='w-fit border-b-2 border-b-primary hover:border-b-2 hover:border-secondary focus:border-b-2 focus:border-secondary'
-            >
-              Reviews
-            </Link>
+           
           </div>
           <SheetDescription></SheetDescription>
         </SheetContent>

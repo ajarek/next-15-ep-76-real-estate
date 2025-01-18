@@ -10,22 +10,22 @@ const Signout = () => {
         "use server"
         await signOut()
       }}
-      className='p-4 bg-white flex flex-col items-center rounded-lg shadow-lg gap-4'
+      className='p-4 bg-white flex flex-col items-center rounded-lg shadow-lg gap-4 min-w-[300px]'
     >
       <div className='flex justify-center p-2'>
         <Link href='/'>
           <Image
-            src='/images/logo.jpg'
+            src='/images/logo.png'
             alt='logo'
-            width={40}
-            height={40}
+            width={80}
+            height={80}
             className='w-full h-full object-cover  '
           />
         </Link>
       </div>
-       <p>Are you sure you want to sign out?</p>
+       <p>Jesteś pewien, że chcesz się wylogować?</p>
       <Button type='submit' className='w-full bg-red-500 text-white hover:bg-red-600'>
-        Sign Out
+        Wyloguj się
       </Button>
     </form>
   )

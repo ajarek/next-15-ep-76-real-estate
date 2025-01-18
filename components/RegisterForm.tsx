@@ -43,10 +43,10 @@ const RegisterForm = () => {
       <div className='flex justify-center p-2'>
         <Link href='/'>
           <Image
-            src='/images/logo.jpg'
+            src='/images/logo.png'
             alt='logo'
-            width={40}
-            height={40}
+            width={80}
+            height={80}
             className='w-full h-full object-cover  '
           />
         </Link>
@@ -57,7 +57,7 @@ const RegisterForm = () => {
       >
         <Input
           type='text'
-          placeholder='Name'
+          placeholder='Imię'
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           className='bg-white'
@@ -71,14 +71,14 @@ const RegisterForm = () => {
         />
         <Input
           type='password'
-          placeholder='Password'
+          placeholder='Hasło'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className='bg-white'
         />
         <Input
           type='text'
-          placeholder='Your photo (optional)'
+          placeholder='Twoje foto (opcjonalnie)'
           value={img}
           onChange={(e) => setImage(e.target.value)}
           className='bg-white'
@@ -92,13 +92,13 @@ const RegisterForm = () => {
           className=''
           type='submit'
         >
-          Register
+          Zarejestruj się
         </Button>
         <Link
           href='/login'
           className='text-black'
         >
-          Already have an account? <b className='text-[#0E78F9]'>Login</b>
+          Masz już konto? <b className='text-[#0E78F9]'>Zaloguj się</b>
         </Link>
       </form>
     </div>

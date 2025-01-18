@@ -12,33 +12,33 @@ export function SignIn() {
         "use server"
         await signIn("credentials", formData)
       }}
-      className="p-4 bg-white flex flex-col items-center rounded-lg shadow-lg gap-4"
+      className="p-4 bg-white flex flex-col items-center rounded-lg shadow-lg gap-4 min-w-[300px]"
     >
       <div className='flex justify-center p-2'>
         <Link href='/'>
           <Image
-            src='/images/logo.jpg'
+            src='/images/logo.png'
             alt='logo'
-            width={40}
-            height={40}
+            width={80}
+            height={80}
             className='w-full h-full object-cover  '
           />
         </Link>
       </div>
       <Label className="w-full">
-        Name
-        <Input name="username" type="text" className="mt-2"/>
+      Imię 
+        <Input name="username" type="text" className="mt-2" required/>
       </Label>
       <Label className="w-full">
-        Password
-        <Input name="password" type="password" className="mt-2"/>
+        Hasło
+        <Input name="password" type="password" className="mt-2" required/>
       </Label>
-      <Button type="submit" className="w-full">Sign In</Button>
+      <Button type="submit" className="w-full">Zaloguj</Button>
       <Link
           href='/register'
           className='text-black'
         >
-         Don&apos;t have an account yet? <b className='text-[#0E78F9]'>Register</b>
+        Nie masz konta? <b className='text-[#0E78F9]'>Zarejestruj się</b>
         </Link>
     </form>
   )
