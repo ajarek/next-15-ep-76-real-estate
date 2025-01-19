@@ -1,0 +1,148 @@
+{
+  "houses": [
+    {
+      "id": 1,
+      "city":"Warszawa",
+      "address": "Słoneczna 12",
+      "price": 850000,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "squareFeet": 120,
+      "yearBuilt": 2015,
+      "type": "mieszkanie",
+      "image": "/images/hause-1.jpg"
+    },
+    {
+      "id": 2,
+      "city":"Warszawa",
+      "address": "Kwiatowa 45",
+      "price": 1200000,
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "squareFeet": 180,
+      "yearBuilt": 2018,
+      "type": "dom jednorodzinny",
+      "image": "/images/hause-2.jpg"
+    },
+    {
+      "id": 3,
+      "city":"Warszawa",
+      "address": "Leśna 78", 
+      "price": 650000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "squareFeet": 75,
+      "yearBuilt": 2010,
+      "type": "apartament",
+      "image": "/images/hause-3.jpg"
+    },
+    {
+      "id": 4,
+      "city":"Warszawa",
+      "address": "Morska 23",
+      "price": 920000,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "squareFeet": 140,
+      "yearBuilt": 2019,
+      "type": "dom jednorodzinny",
+      "image": "/images/hause-4.jpg"
+    },
+    {
+      "id": 5,
+      "city":"Warszawa",
+      "address": "Górska 56",
+      "price": 750000,
+      "bedrooms": 3,
+      "bathrooms": 1.5,
+      "squareFeet": 95,
+      "yearBuilt": 2017,
+      "type": "mieszkanie",
+      "image": "/images/hause-5.jpg"
+    },
+    {
+      "id": 6,
+      "city":"Warszawa",
+      "address": "Parkowa 89",
+      "price": 1500000,
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "squareFeet": 220,
+      "yearBuilt": 2020,
+      "type": "willa",
+      "image": "/images/hause-6.jpg"
+    },
+    {
+      "id": 7,
+      "city":"Warszawa",
+      "address": "Cicha 34",
+      "price": 580000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "squareFeet": 65,
+      "yearBuilt": 2016,
+      "type": "mieszkanie",
+      "image": "/images/hause-7.jpg"
+    },
+    {
+      "id": 8,
+      "city":"Warszawa",
+      "address": "Polna 67",
+      "price": 980000,
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "squareFeet": 160,
+      "yearBuilt": 2014,
+      "type": "dom jednorodzinny",
+      "image": "/images/hause-8.jpg"
+    },
+    {
+      "id": 9,
+      "city":"Warszawa",
+      "address": "Wiejska 90",
+      "price": 700000,
+      "bedrooms": 3,
+      "bathrooms": 1.5,
+      "squareFeet": 110,
+      "yearBuilt": 2012,
+      "type": "dom jednorodzinny",
+      "image": "/images/hause-9.jpg"
+    },
+    {
+      "id": 10,
+      "city":"Warszawa",
+      "address": "Miejska 12",
+      "price": 620000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "squareFeet": 70,
+      "yearBuilt": 2015,
+      "type": "apartament",
+      "image": "/images/hause-10.jpg"
+    },
+    {
+      "id": 11,
+      "city":"Warszawa",
+      "address": "Szeroka 45",
+      "price": 890000,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "squareFeet": 130,
+      "yearBuilt": 2017,
+      "type": "dom jednorodzinny",
+      "image": "/images/hause-11.jpg"
+    },
+    {
+      "id": 12,
+      "city":"Warszawa",
+      "address": "Wąska 78",
+      "price": 550000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "squareFeet": 60,
+      "yearBuilt": 2013,
+      "type": "mieszkanie",
+      "image": "/images/hause-12.jpg"
+    }
+  ]
+}

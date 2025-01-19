@@ -1,27 +1,12 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Hause from '@/components/Hause'
+import { houses } from '@/data/houses.json'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-       
-             <div>
-             <Image
-              className="dark:invert"
-              src="/images/logo.png"
-              alt="logo"
-              width={200}
-              height={200}
-            />
-             </div>
-        <Button>
-          
-            
-            Deploy now
-        
-        </Button>
-      </main>
-    </div>
-  );
+    <main className='min-h-[calc(100vh-32px*2-48px)] flex flex-col   p-4 gap-4   '>
+      <div className='w-full grid grid-cols-3 gap-4 place-items-center max-lg:grid-cols-2 max-sm:grid-cols-1'>
+        <Hause houses={houses} />
+      </div>
+    </main>
+  )
 }
