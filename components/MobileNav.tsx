@@ -33,21 +33,21 @@ const MobileNav = async () => {
             <Logout session={session} />
             <Link
               aria-label='Kontakt'
-              className='w-fit border-b-2 border-b-primary hover:border-b-2 hover:border-secondary focus:border-b-2 focus:border-secondary'
+              className='w-fit  hover:border-b-2 hover:border-primary focus:border-b-2 focus:border-primary'
               href='/contact'
             >
              Kontakt
             </Link>
             <Link
               aria-label='O nas'
-               className='w-fit border-b-2 border-b-primary hover:border-b-2 hover:border-secondary focus:border-b-2 focus:border-secondary'
+               className='w-fit  hover:border-b-2 hover:border-primary focus:border-b-2 focus:border-primary'
               href='/about'
             >
               O nas
             </Link>
             <Link
               aria-label='Oferta'
-               className='w-fit border-b-2 border-b-primary hover:border-b-2 hover:border-secondary focus:border-b-2 focus:border-secondary'
+               className='w-fit  hover:border-b-2 hover:border-primary focus:border-b-2 focus:border-primary'
               href='/offer'
             >
               Oferta
