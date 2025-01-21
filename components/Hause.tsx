@@ -11,10 +11,14 @@ import {
 import { Bath, Bed, MapPin, Ruler } from 'lucide-react'
 import MotionLink from './MotionLink'
 
-const Hause = ({ houses }: { houses: HouseTypes[] }) => {
+const Hause = ({ houses, city, price, bedrooms }: { houses: HouseTypes[] , city: string, price: string, bedrooms: string }) => {
   return (
     <>
-      {houses.map((house: HouseTypes) => {
+      {houses
+        .filter((house: HouseTypes) => !city || house.city.toUpperCase().includes(city.toUpperCase()))
+        .filter((house: HouseTypes) => !price || house.price<= Number(price))
+        .filter((house: HouseTypes) => !bedrooms || house.bedrooms == Number(bedrooms))
+      .map((house: HouseTypes) => {
         return (
           <Card
             key={house.id}
