@@ -48,29 +48,28 @@ export default function ContactForm({ nameUser, emailUser }: { nameUser: string,
 
   return (
     <div className='w-full flex items-center justify-center p-4 '>
-      <div className='w-full max-w-md bg-white p-8 rounded-lg shadow-lg'>
+      <div className='w-full max-w-md  p-8 rounded-lg shadow-lg'>
         <h1 className='text-2xl font-bold mb-6 flex items-center'>
-          <Mail className='mr-2 h-6 w-6' /> Contact Us
+          <Mail className='mr-2 h-6 w-6' /> Kontakt
         </h1>
         {isSubmitted ? (
           <div className='flex flex-col items-center justify-center space-y-4'>
             <Check className='h-12 w-12 text-green-500' />
             <p className='text-lg text-center font-semibold'>
-              {nameUser.toUpperCase()}, Thank you for your message!
+              {nameUser.toUpperCase()}, Dziękujemy za wiadomość!
             </p>
             <Button
-              variant='outline'
               onClick={() => setIsSubmitted(false)}
               className='mt-4'
             >
-              Send Another Message
+             Wyślij kolejną wiadomość
             </Button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className='space-y-4'>
             <div className='space-y-2'>
               <Label htmlFor='name' className='flex items-center'>
-                <User className='mr-2 h-4 w-4' /> Name
+                <User className='mr-2 h-4 w-4' /> Imię
               </Label>
               <Input
                 id='name'
@@ -100,7 +99,7 @@ export default function ContactForm({ nameUser, emailUser }: { nameUser: string,
             </div>
             <div className='space-y-2'>
               <Label htmlFor='message' className='flex items-center'>
-                Message
+               Wiadomość
               </Label>
               <Textarea
                 id='message'

@@ -4,6 +4,7 @@ import MobileNav from './MobileNav'
 import { auth } from '@/app/api/auth/auth'
 import Image from 'next/image'
 import Logout from './Logout'
+import { ModeToggle } from './ModeToggle'
 
 const Navbar = async () => {
   const session = await auth()
@@ -48,6 +49,7 @@ const Navbar = async () => {
           </Link>
 
           <Logout session={session} />
+          <ModeToggle/>
         </ul>
         <div className=' lg:hidden'>
           <MobileNav />

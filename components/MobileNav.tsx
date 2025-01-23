@@ -10,6 +10,7 @@ import {
   SheetTitle,
   SheetDescription,
 } from "@/components/ui/sheet"
+import { ModeToggle } from "./ModeToggle"
 
 const MobileNav = async () => {
   const session = await auth()
@@ -52,7 +53,7 @@ const MobileNav = async () => {
             >
               Oferta
             </Link>
-
+            <ModeToggle/>
            
           </div>
           <SheetDescription></SheetDescription>
