@@ -27,16 +27,7 @@ export function Search({query}:SearchProps) {
     }
   }, 300)
 
-  // useEffect(() => {
-  //   const clearInput = document.querySelector(
-  //     `input[name=${query}]`
-  //   ) as HTMLInputElement
-  //   if (clearInput) {
-  //     setTimeout(() => {
-  //       clearInput.value = ''
-  //     }, 3000)
-  //   }
-  // }, [query, searchParams])
+ 
 
   return (
     <div className='w-full '>
