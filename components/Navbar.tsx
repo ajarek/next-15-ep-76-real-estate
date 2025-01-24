@@ -20,8 +20,8 @@ const Navbar = async () => {
           <Image
             src='/images/logo.png'
             alt='logo'
-            width={60}
-            height={60}
+            width={40}
+            height={40}
           />
           <h1 className='text-2xl font-bold '>Nieruchomości</h1>
         </Link>

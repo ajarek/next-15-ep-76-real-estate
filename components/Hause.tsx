@@ -28,11 +28,12 @@ const Hause = ({ houses, city, price, bedrooms, squareFeet, yearBuilt }: { house
           >
             <CardHeader className='relative w-[270px] h-[153px] max-sm:w-[375px]  max-sm:h-[210px] overflow-hidden'>
               <Image
-                className='dark:invert object-cover w-full h-full rounded-t-lg '
+                className=' object-cover w-full h-full rounded-t-lg '
                 src={house.image}
                 alt='logo'
                 fill
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+               
               />
             </CardHeader>
             <CardContent className='p-2 flex flex-col items-start justify-start gap-4 '>

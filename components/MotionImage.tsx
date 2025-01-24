@@ -18,7 +18,8 @@ const MotionImage = ({src, alt, width, height}:{src: string, alt: string, width:
         alt={alt}
         width={width}
         height={height}
-        className='rounded-sm shadow-lg shadow-foreground'
+        className='rounded-sm shadow-sm shadow-foreground object-cover'
+        priority
       />
     </motion.div>
   )
