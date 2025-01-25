@@ -113,7 +113,7 @@ export default function ContactForm({ nameUser, emailUser }: { nameUser: string,
               )}
             </div>
             <div className='flex justify-end'>
-              <MotionButton typeButton='submit' label='Submit' />
+              <MotionButton typeButton='submit' label='Wyślij' />
             </div>
           </form>
         )}
