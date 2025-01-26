@@ -1,14 +1,13 @@
+import * as motion from 'motion/react-client'
 
-import * as motion from "motion/react-client"
-
-import { Button } from "@/components/ui/button"
-import { TrendingUp } from "lucide-react"
+import { Button } from '@/components/ui/button'
+import { TrendingUp } from 'lucide-react'
 type PropsButton = {
-    label: string
-    typeButton: "button" | "submit" | "reset" | undefined
+  label: string
+  typeButton: 'button' | 'submit' | 'reset' | undefined
 }
 
-const MotionButton = ({ label, typeButton}: PropsButton) => {
+const MotionButton = ({ label, typeButton }: PropsButton) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
@@ -18,7 +17,12 @@ const MotionButton = ({ label, typeButton}: PropsButton) => {
       exit={{ opacity: 0, scale: 0 }}
       transition={{ duration: 0.5 }}
     >
-       <Button type={typeButton} aria-label={label}>{label}  <TrendingUp size={32}  /></Button>
+      <Button
+        type={typeButton}
+        aria-label={label}
+      >
+        {label} <TrendingUp size={32} />
+      </Button>
     </motion.div>
   )
 }

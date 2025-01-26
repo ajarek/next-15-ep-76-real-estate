@@ -5,17 +5,19 @@ import connectToDb from '@/lib/connectToDb'
 import bcrypt from 'bcryptjs'
 
 const validateCredentials = (username: unknown, password: unknown): boolean => {
-  return typeof username === 'string' && 
-         typeof password === 'string' && 
-         username.length > 0 && 
-         password.length > 0
+  return (
+    typeof username === 'string' &&
+    typeof password === 'string' &&
+    username.length > 0 &&
+    password.length > 0
+  )
 }
 
 const authenticateUser = async (username: string, password: string) => {
-        await connectToDb()
-          const user = await User.findOne({ username })
-  return user && await bcrypt.compare(password, user.password) ? user : null
-          }
+  await connectToDb()
+  const user = await User.findOne({ username })
+  return user && (await bcrypt.compare(password, user.password)) ? user : null
+}
 
 export const authOptions = {
   providers: [
@@ -43,26 +45,24 @@ export const authOptions = {
   ],
 
   callbacks: {
-    async redirect({  baseUrl }:{baseUrl: string}) {
+    async redirect({ baseUrl }: { baseUrl: string }) {
       return `${baseUrl}`
     },
-   
-
-},
+  },
   secret: process.env.AUTH_SECRET,
   session: {
-    strategy: 'jwt', 
-    maxAge: 30 * 24 * 60 * 60
+    strategy: 'jwt',
+    maxAge: 30 * 24 * 60 * 60,
   },
 } as const
 
 const authOptionsFixed = {
   ...authOptions,
-  providers: Array.from(authOptions.providers)
+  providers: Array.from(authOptions.providers),
 }
-export const { 
-  auth, 
-  handlers: { GET, POST }, 
-  signIn, 
-  signOut 
+export const {
+  auth,
+  handlers: { GET, POST },
+  signIn,
+  signOut,
 } = NextAuth(authOptionsFixed)

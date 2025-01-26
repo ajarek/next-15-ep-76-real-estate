@@ -21,9 +21,8 @@ const AboutUs = async () => {
         </div>
 
         <div className='space-y-2'>
-          <h1 className='text-4xl font-bold text-gray-900'>O Nas</h1>
+          <h1 className='text-4xl font-bold '>O Nas</h1>
 
-          
           <ul className='text-lg  space-y-2'>
             Dlaczego warto wybrać nas?
             <li>
@@ -32,17 +31,17 @@ const AboutUs = async () => {
               nieruchomość spełniającą wszystkie Twoje oczekiwania.
             </li>
             <li>
-             <b>Indywidualne podejście:</b> Każdy klient jest dla nas wyjątkowy.
-              Dzięki dogłębnej rozmowie poznamy Twoje potrzeby i oczekiwania, a
-              następnie przedstawimy Ci dopasowane oferty.
+              <b>Indywidualne podejście:</b> Każdy klient jest dla nas
+              wyjątkowy. Dzięki dogłębnej rozmowie poznamy Twoje potrzeby i
+              oczekiwania, a następnie przedstawimy Ci dopasowane oferty.
             </li>
             <li>
-              <b>Kompleksowa obsługa:</b> Pomagamy nie tylko w znalezieniu wymarzonego
-              domu, ale również w załatwieniu wszystkich formalności związanych
-              z zakupem, w tym uzyskaniu kredytu hipotecznego. 
+              <b>Kompleksowa obsługa:</b> Pomagamy nie tylko w znalezieniu
+              wymarzonego domu, ale również w załatwieniu wszystkich formalności
+              związanych z zakupem, w tym uzyskaniu kredytu hipotecznego.
             </li>
             <li>
-             <b> Wsparcie na każdym etapie:</b> Jesteśmy z Tobą w procesie
+              <b> Wsparcie na każdym etapie:</b> Jesteśmy z Tobą w procesie
               zakupu. Od pierwszego kontaktu, aż po przekazanie kluczy do nowego
               domu.
             </li>

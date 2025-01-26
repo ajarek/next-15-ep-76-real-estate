@@ -2,12 +2,12 @@
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useDebouncedCallback } from 'use-debounce'
 import { Input } from '@/components/ui/input'
-import { useEffect } from 'react'
+
 interface SearchProps {
   query: string
 }
 
-export function Search({query}:SearchProps) {
+export function Search({ query }: SearchProps) {
   const searchParams = useSearchParams()
   const { replace } = useRouter()
   const pathname = usePathname()
@@ -27,8 +27,6 @@ export function Search({query}:SearchProps) {
     }
   }, 300)
 
- 
-
   return (
     <div className='w-full '>
       <Input
@@ -39,7 +37,6 @@ export function Search({query}:SearchProps) {
         defaultValue={searchParams.get(query)?.toString()}
         className='pl-10 bg-background text-foreground text-xl rounded-full selector'
         aria-label='Search'
-       
       />
     </div>
   )

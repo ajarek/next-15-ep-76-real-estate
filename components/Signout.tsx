@@ -1,13 +1,13 @@
-import { signOut } from "@/app/api/auth/auth"
-import { Button } from "./ui/button"
-import Link from "next/link"
-import Image from "next/image"
+import { signOut } from '@/app/api/auth/auth'
+import { Button } from './ui/button'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Signout = () => {
   return (
     <form
       action={async () => {
-        "use server"
+        'use server'
         await signOut()
       }}
       className='p-4 bg-white flex flex-col items-center rounded-lg shadow-lg gap-4 min-w-[300px]'
@@ -23,8 +23,11 @@ const Signout = () => {
           />
         </Link>
       </div>
-       <p>Jesteś pewien, że chcesz się wylogować?</p>
-      <Button type='submit' className='w-full bg-red-500 text-white hover:bg-red-600'>
+      <p>Jesteś pewien, że chcesz się wylogować?</p>
+      <Button
+        type='submit'
+        className='w-full bg-red-500 text-white hover:bg-red-600'
+      >
         Wyloguj się
       </Button>
     </form>

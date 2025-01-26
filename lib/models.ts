@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+import mongoose from 'mongoose'
 
 export type User = {
   _id: string
@@ -8,23 +8,7 @@ export type User = {
   img: string
   isAdmin: boolean
 }
-export type UserWithoutId = Omit<User, "_id">
-
-export type Notes = {
- 
-  text: string
-  color: string
-  user: string
-  
-}
-export type NotesDatabase = {
-  _id: string
-  createdAt:string
-  text:string
-  color: string
-  user: string
-}
-
+export type UserWithoutId = Omit<User, '_id'>
 
 const userSchema = new mongoose.Schema(
   {
@@ -37,14 +21,4 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 )
 
-const notesSchema = new mongoose.Schema(
-  {
-    text: { type: String, required: true },
-    color: { type: String, required: true },
-    user: { type: String, required: true },
-  },
-  { timestamps: true }
-)
-
-export const User = mongoose.models?.User || mongoose.model("User", userSchema)
-export const Notes = mongoose.models?.Notes || mongoose.model("Notes", notesSchema)
+export const User = mongoose.models?.User || mongoose.model('User', userSchema)

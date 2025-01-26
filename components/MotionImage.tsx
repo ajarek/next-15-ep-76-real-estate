@@ -1,7 +1,17 @@
-import * as motion from "motion/react-client"
-import Image from "next/image"
+import * as motion from 'motion/react-client'
+import Image from 'next/image'
 
-const MotionImage = ({src, alt, width, height}:{src: string, alt: string, width: number, height: number}) => {
+const MotionImage = ({
+  src,
+  alt,
+  width,
+  height,
+}: {
+  src: string
+  alt: string
+  width: number
+  height: number
+}) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
@@ -9,8 +19,8 @@ const MotionImage = ({src, alt, width, height}:{src: string, alt: string, width:
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
-          duration: 3,
-          scale: { type: "spring", visualDuration: 2, bounce: 0.5 },
+        duration: 3,
+        scale: { type: 'spring', visualDuration: 2, bounce: 0.5 },
       }}
     >
       <Image

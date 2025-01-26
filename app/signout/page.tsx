@@ -1,4 +1,4 @@
-import  Signout  from '@/components/Signout'
+import Signout from '@/components/Signout'
 import React from 'react'
 
 const SignoutUser = () => {

@@ -61,7 +61,6 @@ const RegisterForm = () => {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           className='bg-white'
-          
         />
         <Input
           type='email'

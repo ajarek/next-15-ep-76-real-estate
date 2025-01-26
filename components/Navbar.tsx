@@ -49,7 +49,7 @@ const Navbar = async () => {
           </Link>
 
           <Logout session={session} />
-          <ModeToggle/>
+          <ModeToggle />
         </ul>
         <div className=' lg:hidden'>
           <MobileNav />

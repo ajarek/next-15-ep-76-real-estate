@@ -62,16 +62,18 @@ export default function OfferForm({
   return (
     <div className='w-full flex items-center justify-center p-4 '>
       <div className='w-full max-w-md  px-4 rounded-lg shadow-lg'>
-       
         {isSubmitted ? (
           <div className='flex flex-col items-center justify-center space-y-4'>
             <Check className='h-12 w-12 text-green-500' />
             <p className='text-lg text-center font-semibold'>
-              {nameUser.toUpperCase()}{' '}{lastName.toUpperCase()}<br/>
-              Twoja wiadomość została wysłana pomyślnie!<br/>
-              Pełną ofertę prześlemy wkrótce na podany adres e-mail: {emailUser}.<br/>
-              Dziękujemy za kontakt.<br/>
-
+              {nameUser.toUpperCase()} {lastName.toUpperCase()}
+              <br />
+              Twoja wiadomość została wysłana pomyślnie!
+              <br />
+              Pełną ofertę prześlemy wkrótce na podany adres e-mail: {emailUser}
+              .<br />
+              Dziękujemy za kontakt.
+              <br />
             </p>
             <Button
               onClick={() => setIsSubmitted(false)}
@@ -160,7 +162,8 @@ export default function OfferForm({
                 htmlFor='message'
                 className='flex items-center'
               >
-                <MessageCircleReply className='mr-2 h-4 w-4' />Wiadomość
+                <MessageCircleReply className='mr-2 h-4 w-4' />
+                Wiadomość
               </Label>
               <Textarea
                 id='message'
