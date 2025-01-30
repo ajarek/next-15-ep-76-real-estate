@@ -39,7 +39,7 @@ const RegisterForm = () => {
   }
 
   return (
-    <div className='p-4 bg-white flex flex-col items-center rounded-lg shadow-lg'>
+    <div className='p-4 flex flex-col items-center rounded-lg border shadow-lg'>
       <div className='flex justify-center p-2'>
         <Link href='/'>
           <Image
@@ -60,28 +60,28 @@ const RegisterForm = () => {
           placeholder='Imię'
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className='bg-white'
+          className=''
         />
         <Input
           type='email'
           placeholder='Email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className='bg-white'
+          className=''
         />
         <Input
           type='password'
           placeholder='Hasło'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className='bg-white'
+          className=''
         />
         <Input
           type='text'
           placeholder='Twoje foto (opcjonalnie)'
           value={img}
           onChange={(e) => setImage(e.target.value)}
-          className='bg-white'
+          className=''
         />
         <Input
           type='hidden'

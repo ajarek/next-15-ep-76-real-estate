@@ -12,7 +12,7 @@ export function SignIn() {
         'use server'
         await signIn('credentials', formData)
       }}
-      className='p-4 flex flex-col items-center rounded-lg shadow-lg gap-4 min-w-[300px]'
+      className='p-4 flex flex-col items-center rounded-lg shadow-lg border gap-4 min-w-[300px]'
     >
       <div className='flex justify-center p-2'>
         <Link href='/'>
